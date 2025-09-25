@@ -1,0 +1,12 @@
+{
+  "compress_lg": true,
+  "kekulize": false,
+  "map_threshold": 0.85,
+  "topk_lg": 512,
+  "versions": {
+    "numpy": "1.26.4",
+    "python": "3.10.18 (main, Jun  5 2025, 08:37:47) [Clang 14.0.6 ]",
+    "rdkit": "2022.09.5",
+    "rxnmapper": "0.4.2"
+  }
+}

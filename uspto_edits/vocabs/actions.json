@@ -1,0 +1,11 @@
+{
+  "ADD_BOND": 2,
+  "CHANGE_ATOM": 5,
+  "CHANGE_BOND": 1,
+  "DELETE_SUBGRAPH": 6,
+  "DEL_BOND": 0,
+  "H_GAIN": 4,
+  "H_LOSS": 3,
+  "REMOVE_LG": 7,
+  "STOP": 8
+}
