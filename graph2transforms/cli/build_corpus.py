@@ -67,8 +67,7 @@ def _process_pair(reactants: str, products: str, opts: Dict) -> Dict:
         target_smiles = _canonical_no_map_smiles(mapped.p_mol)
         if flags.get("sanitize_failed", 0) == 1:
             raise RuntimeError("sanitize_failed_during_rollout")
-        if final_smiles != target_smiles:
-            raise RuntimeError(f"final_mismatch: {final_smiles} != {target_smiles}")
+        final_matches_target = final_smiles == target_smiles
         return {
             "reaction_id": mapped.reaction_id,
             "mapped_rxn": mapped.mapped_rxn,
@@ -77,6 +76,7 @@ def _process_pair(reactants: str, products: str, opts: Dict) -> Dict:
             "lg_fragments": diff.leaving_group_fragments,
             "final_smiles": final_smiles,
             "target_smiles": target_smiles,
+            "final_matches_target": final_matches_target,
             "failure": None,
         }
     except Exception as e:

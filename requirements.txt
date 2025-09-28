@@ -16,6 +16,9 @@ ujson>=5.8.0
 # Testing
 pytest>=7.3.0
 
+# ML
+torch>=2.0.0
+
 # Optional utilities (install if desired)
 # datamol>=0.10.0
 # rdchiral>=1.1.0
