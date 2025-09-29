@@ -1,6 +1,6 @@
 ## Graph2Transforms: Reaction → Autoregressive Edits Corpus
 
-This toolkit converts tokenized reaction SMILES (reactants → products) into a canonical, autoregressive sequence of chemically valid edit actions. It verifies the sequence by rolling edits forward, and emits per-step graph snapshots, targets, masks, and vocabularies for training graph-to-edits models.
+This toolkit converts tokenized reaction SMILES (reactants → products) into a canonical, autoregressive sequence of chemically valid edit actions. It verifies the sequence by rolling edits forward, and emits per-step graph snapshots, targets, masks, and vocabularies for training graph-to-edits models. 
 
 ### Inputs
 - Six files total in a directory, named `src-{split}` and `tgt-{split}` for `{train,val,test}`.
